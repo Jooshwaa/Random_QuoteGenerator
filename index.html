@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>ES8 Project</title>
+
+</head>
+
+<body class="d-flex flex-column">
+  <div class="cover-background">
+    <img src="" alt="" id="imgEl">
+  </div>
+
+  <div class="cover-container d-flex w-100 justify-center text-center h-100 p-3 mx-auto flex-column">
+
+    <!--This is the modal section-->
+    <section class="hidden" id="modal-form">
+      <div class="modal modal-sheet position-static d-block  p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-2 pb-4 border-bottom-0">
+              <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body p-2 pt-0">
+              <form class="">
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" data-email>
+                  <label for="floatingInput">Email address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password" data-password>
+                  <label for="floatingPassword">Password</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="file" class="form-control rounded-3" id="floatingImage" placeholder="Choose image" data-images>
+                  <label for="floatingImage">Choose images</label>
+                </div>
+
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" data-submit type="submit">Sign up</button>
+
+                <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                <hr class="my-4">
+
+                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#twitter" />
+                  </svg>
+                  Sign up with Twitter
+                </button>
+
+                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#facebook" />
+                  </svg>
+                  Sign up with Facebook
+                </button>
+
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#github" />
+                  </svg>
+                  Sign up with GitHub
+                </button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!--This is the navbar section-->
+    <nav class="navbar navbar-expand-lg text-white ">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="d-flex align-items-center">
+          <span class="navbar-brand text-white">Gogetter 💥</span>
+
+
+          <div class="d-flex navbar-brand text-white gap-2" id="Wctn">
+            <span id="city">1</span>
+            <span id="descript">2</span>
+            <span id="tempt">3</span>
+          </div>
+
+          <div class="d-flex align-items-center gap-1 w-50 navbar-brand">
+
+            <span id="disTime"></span>
+            |
+            <span id="disDay"></span>
+            |
+            <img src="/images /bdc6247d1c8ebafd95db73f665adabd4.jpg" alt="" id="pro-img">
+
+          </div>
+
+          <div class="" id="modal">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!--This is the quote section-->
+    <section>
+      <div class="container body-ctn flex-column text-white mt-5 h-75 w-100">
+
+        <div class="quote-hdr">
+          <h1 class="hdr-grt"></h1>
+        </div>
+
+        <div class="quote-bdy ">
+          <div class="author">
+            <cite>auth</cite>
+            <p>Maya Angeloun</p>
+          </div>
+          <div class="quotes">
+            <span>"</span>
+            <p>You are the sum total of everything you’ve ever seen, heard, eaten, smelled, been told, forgot ― it’s all there.
+              Everything influences each of us, and because of that I try to make sure that my experiences are positive.</p>
+            <span class="text-end">"</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <script src="/Random_QuoteGenerator/script/main.js" type="script/text"  ></script>
+  <script src="/Random_QuoteGenerator/scrip/form.js"  type="script/text" ></script>
+  <script src="/Random_QuoteGenerator/script/http.js"  type="script/text" ></script>
+</body>  
+
+</html>
